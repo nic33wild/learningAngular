@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
   user: string = 'Nicola';
+  elements: Array<number> = [1, 2, 3, 4];
+  color: boolean = true;
+  date = new Date();
 
   constructor() {}
 

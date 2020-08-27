@@ -3,5 +3,24 @@
 
   <button class="submitButton" (click)="userClick()">Click me!</button>
 
-  <img src="assets/sharon-mccutcheon-unsplash.jpg" alt="Stack of books" />
+  <img
+    class="margin-vertical"
+    src="assets/sharon-mccutcheon-unsplash.jpg"
+    alt="Stack of books"
+  />
 </div>
+
+<!-- Test directive strutturelles - Retirer ou ajouter des éléments au dom -->
+
+<div
+  *ngFor="let element of elements; let i"
+  [ngClass]="{ highlighted: i % 2 === 0 }"
+>
+  Hello {{ element }}
+</div>
+
+<!-- Test directives d'attributs - Modifient le comportement de certains éléments du DOM-->
+<!-- <div class="directive" [ngClass]="{ highlighted: color }">Directive</div> -->
+
+<!-- Example Pipe -->
+<div class="margin-vertical">Today is {{ date | date: "dd LLLL yyyy" }}</div>

@@ -20,3 +20,12 @@ img {
   margin: 10px 0;
   width: 100px;
 }
+
+.margin-vertical {
+  margin: 15px 0;
+}
+
+.highlighted {
+  background-color: blue;
+  width: 200px;
+}
