@@ -1,0 +1,10 @@
+a {
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px 15px;
+}
+
+.active {
+  font-weight: bolder;
+}
