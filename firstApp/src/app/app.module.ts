@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { UserComponent } from './user/user.component';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: 'user', component: UserComponent },
@@ -14,7 +15,12 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [AppComponent, MainComponent, UserComponent],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

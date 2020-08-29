@@ -1,1 +1,15 @@
 <p>user works!</p>
+
+<!-- <input [(ngModel)]="userInput" /> -->
+
+<!-- <input [formControl]="userInput" /> -->
+
+<form [formGroup]="userForm">
+  Name:
+  <input formControlName="name" />
+  Email:
+  <input formControlName="email" />
+  <button (click)="showForm()">Submit</button>
+</form>
+
+<!-- Test : {{ userInput.value }} -->
