@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { DateService } from '../shared/date.service';
 
 @Component({
   selector: 'app-user',
@@ -12,9 +13,14 @@ export class UserComponent implements OnInit {
     email: new FormControl(''),
   });
 
-  constructor() {}
+  // dateService: DateService;
+  constructor(public dateService: DateService) {
+    // this.dateService = dateService; //Linee commentate sostituite dal public
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.dateService.date;
+  }
 
   showForm() {
     alert(

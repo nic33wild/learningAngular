@@ -13,3 +13,6 @@
 </form>
 
 <!-- Test : {{ userInput.value }} -->
+
+<div>Date (variable) : {{ dateService.date | date: "long" }};</div>
+<div>Date (méthode) : {{ dateService.getDate() | date: "long" }};</div>
