@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-import { SelectMultipleControlValueAccessor } from '@angular/forms';
-import { timer } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',

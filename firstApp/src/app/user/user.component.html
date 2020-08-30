@@ -1,18 +1,20 @@
-<p>user works!</p>
+<div class="container">
+  <h2>User component!</h2>
 
-<!-- <input [(ngModel)]="userInput" /> -->
+  <!-- <input [(ngModel)]="userInput" /> -->
 
-<!-- <input [formControl]="userInput" /> -->
+  <!-- <input [formControl]="userInput" /> -->
 
-<form [formGroup]="userForm">
-  Name:
-  <input formControlName="name" />
-  Email:
-  <input formControlName="email" />
-  <button (click)="showForm()">Submit</button>
-</form>
+  <form [formGroup]="userForm">
+    Name:
+    <input formControlName="name" />
+    Email:
+    <input formControlName="email" />
+    <button (click)="showForm()">Submit</button>
+  </form>
 
-<!-- Test : {{ userInput.value }} -->
+  <!-- Test : {{ userInput.value }} -->
 
-<div>Date (variable) : {{ dateService.date | date: "long" }};</div>
-<div>Date (méthode) : {{ dateService.getDate() | date: "long" }};</div>
+  <div>Date (variable) : {{ dateService.date | date: "long" }};</div>
+  <div>Date (méthode) : {{ dateService.getDate() | date: "long" }};</div>
+</div>

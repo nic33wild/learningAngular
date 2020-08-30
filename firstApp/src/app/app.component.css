@@ -1,10 +1,15 @@
 a {
   background-color: lightblue;
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
   margin: 10px 15px;
 }
 
 .active {
   font-weight: bolder;
+}
+
+.navbar {
+  padding: 10px;
+  background: lightblue;
 }
